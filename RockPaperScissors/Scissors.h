@@ -17,5 +17,10 @@ public:
 	~Scissors();
 
 	void print();
+
+
+	bool operator>(Player* other);
+	bool operator<(Player* other);
+	bool operator==(Player* other);
 };
 

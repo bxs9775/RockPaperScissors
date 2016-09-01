@@ -18,5 +18,9 @@ public:
 	~Rock();
 
 	void print();
+
+	bool operator>(Player* other);
+	bool operator<(Player* other);
+	bool operator==(Player* other);
 };
 

@@ -20,6 +20,10 @@ public:
 	string getName();
 	char getType();
 	virtual void print() = 0;
+
+	virtual bool operator>(Player* other) = 0;
+	virtual bool operator==(Player* other) = 0;
+	virtual bool operator<(Player* other) = 0;
 protected:
 	string name;
 	char type;
